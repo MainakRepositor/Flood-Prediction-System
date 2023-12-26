@@ -10,7 +10,7 @@ def app():
     st.title("Flood Probability Prediction")
 
     # Add image to the home page
-    st.image("./images/home.jpeg")
+    st.image("./images/home.jpeg",width=1000)
 
     # Add brief describtion of your web app
     st.markdown(
