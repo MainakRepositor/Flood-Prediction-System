@@ -15,14 +15,13 @@ st.set_page_config(
 )
     
 # Import pages
-from Tabs import home, data, predict, visualise
+from Tabs import home, predict, visualise
 
 
 
 # Dictionary for pages
 Tabs = {
     "Home": home,
-    "Data Info": data,
     "Prediction": predict,
     "Visualisation": visualise
     
