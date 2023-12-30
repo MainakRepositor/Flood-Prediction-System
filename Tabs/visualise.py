@@ -37,10 +37,10 @@ def app(df, X, y):
         fig = plt.figure(figsize = (15, 7))
         fig, ax = plt.subplots()
 
-        color1 = st.sidebar.color_picker("Select Color for Dataset 1", "blue")
-        color2 = st.sidebar.color_picker("Select Color for Dataset 2", "red")
-        color3 = st.sidebar.color_picker("Select Color for Dataset 3", "green")
-        color4 = st.sidebar.color_picker("Select Color for Dataset 4", "yellow")
+        color1 = st.sidebar.color_picker("Select Color for Dataset 1", "#2596be")
+        color2 = st.sidebar.color_picker("Select Color for Dataset 2", "#2596be")
+        color3 = st.sidebar.color_picker("Select Color for Dataset 3", "#2596be")
+        color4 = st.sidebar.color_picker("Select Color for Dataset 4", "#2596be")
         
         
         ax.hist(df['FloodProbability'], bins=30, alpha=0.5, color=color1, label='FloodProbability')
