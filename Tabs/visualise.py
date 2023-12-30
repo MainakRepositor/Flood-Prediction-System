@@ -31,6 +31,17 @@ def app(df, X, y):
         bottom, top = ax.get_ylim()                             # Getting the top and bottom margin limits.
         ax.set_ylim(bottom + 0.5, top - 0.5)                    # Increasing the bottom and decreasing the top margins respectively.
         st.pyplot(fig)
+        
+    if st.checkbox("Show the flood chances lineplot"):
+        st.subheader("Flood Chances")
+        fig = plt.figure(figsize = (15, 7))
+        plt.plot(df['MonsoonIntensity'], df['FloodProbability'])
+        plt.xlabel('Monsoon Intensity Score')
+        plt.ylabel('Flood Probability')
+        plt.title('Flood Influence by Monsoon')
+        st.pyplot(plt)
+        
+    
 
   
 
