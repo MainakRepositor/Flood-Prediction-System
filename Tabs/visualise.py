@@ -35,10 +35,10 @@ def app(df, X, y):
     if st.checkbox("Show the flood chances lineplot"):
         st.subheader("Flood Chances")
         fig = plt.figure(figsize = (15, 7))
-        plt.plot(df['MonsoonIntensity'], df['FloodProbability'])
-        plt.xlabel('Monsoon Intensity Score')
-        plt.ylabel('Flood Probability')
-        plt.title('Flood Influence by Monsoon')
+        fig, ax = plt.subplots()
+        ax.hist(data1, bins=30, alpha=0.5, color=color1, label='FloodProbability')
+        ax.hist(data2, bins=30, alpha=0.5, color=color2, label='MonsoonIntensity')
+        ax.legend()
         st.pyplot(plt)
         
     
