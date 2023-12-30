@@ -81,6 +81,7 @@ def app(df, X, y):
 
         else:
             st.error("Take immediate action. Chances of cloud burst of sudden flood!")
+            st.markdown('''<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.5916000247553!2d88.43247407530222!3d22.631721029449633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f93ce25c115%3A0xca68da3fa8a3c490!2sNDRF(RRC-Kolkata)!5e0!3m2!1sen!2sin!4v1703585446848!5m2!1sen!2sin" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>''',unsafe_allow_html=True)
 
         
         
