@@ -35,7 +35,7 @@ def app(df, X, y):
     if st.checkbox("Show the flood chances from prevelant factors"):
         st.subheader("Flood Chances")
         fig = plt.figure(figsize = (15, 7))
-        fig, ax = plt.subplots()
+        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(10, 8))
 
         color1 = st.sidebar.color_picker("Select Color for Dataset 1", "#2596be")
         color2 = st.sidebar.color_picker("Select Color for Dataset 2", "#2596be")
