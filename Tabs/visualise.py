@@ -44,10 +44,17 @@ def app(df, X, y):
         
         
         ax1.hist(df['ClimateChange'], bins=30, alpha=0.5, color=color1, label='ClimateChange')
+        ax1.set_title('Climate Change Effect on Flood')
+        
         ax2.hist(df['DrainageSystems'], bins=30, alpha=0.5, color=color2, label='DrainageSystems')
+        ax2.set_title('Drainage Systems Effect on Flood')
+        
         ax3.hist(df['IneffectiveDisasterPreparedness'], bins=30, alpha=0.5, color=color3, label='IneffectiveDisasterPreparedness')
+        ax3.set_title('Ineffective Disaster Preparedness Effect on Flood')
+        
         ax4.hist(df['Deforestation'], bins=30, alpha=0.5, color=color4, label='Deforestation')
-        #ax.legend()
+        ax4.set_title('Deforestation Effect on Flood')
+        
         st.pyplot(plt)
         
     
