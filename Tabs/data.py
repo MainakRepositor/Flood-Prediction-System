@@ -15,6 +15,7 @@ def app(df):
 
     # Create an expansion option to check the data
     with st.expander("View data"):
+        st.info("For huge size of data, we are only displaying first 1000 data points")
         st.dataframe(df.head(1000))
 
     # Create a section to columns values
