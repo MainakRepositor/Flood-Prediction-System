@@ -43,11 +43,11 @@ def app(df, X, y):
         color4 = st.sidebar.color_picker("Select Color for Dataset 4", "#2596be")
         
         
-        ax.hist(df['ClimateChange'], bins=30, alpha=0.5, color=color1, label='ClimateChange')
-        ax.hist(df['DrainageSystems'], bins=30, alpha=0.5, color=color2, label='DrainageSystems')
-        ax.hist(df['IneffectiveDisasterPreparedness'], bins=30, alpha=0.5, color=color3, label='IneffectiveDisasterPreparedness')
-        ax.hist(df['Deforestation'], bins=30, alpha=0.5, color=color4, label='Deforestation')
-        ax.legend()
+        ax1.hist(df['ClimateChange'], bins=30, alpha=0.5, color=color1, label='ClimateChange')
+        ax2.hist(df['DrainageSystems'], bins=30, alpha=0.5, color=color2, label='DrainageSystems')
+        ax3.hist(df['IneffectiveDisasterPreparedness'], bins=30, alpha=0.5, color=color3, label='IneffectiveDisasterPreparedness')
+        ax4.hist(df['Deforestation'], bins=30, alpha=0.5, color=color4, label='Deforestation')
+        #ax.legend()
         st.pyplot(plt)
         
     
