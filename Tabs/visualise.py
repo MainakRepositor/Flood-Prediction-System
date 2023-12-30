@@ -32,7 +32,7 @@ def app(df, X, y):
         ax.set_ylim(bottom + 0.5, top - 0.5)                    # Increasing the bottom and decreasing the top margins respectively.
         st.pyplot(fig)
         
-    if st.checkbox("Show the flood chances lineplot"):
+    if st.checkbox("Show the flood chances from prevelant factors"):
         st.subheader("Flood Chances")
         fig = plt.figure(figsize = (15, 7))
         fig, ax = plt.subplots()
@@ -43,7 +43,7 @@ def app(df, X, y):
         color4 = st.sidebar.color_picker("Select Color for Dataset 4", "#2596be")
         
         
-        ax.hist(df['FloodProbability'], bins=30, alpha=0.5, color=color1, label='FloodProbability')
+        ax.hist(df['ClimateChange'], bins=30, alpha=0.5, color=color1, label='ClimateChange')
         ax.hist(df['DrainageSystems'], bins=30, alpha=0.5, color=color2, label='DrainageSystems')
         ax.hist(df['IneffectiveDisasterPreparedness'], bins=30, alpha=0.5, color=color3, label='IneffectiveDisasterPreparedness')
         ax.hist(df['Deforestation'], bins=30, alpha=0.5, color=color4, label='Deforestation')
